@@ -19,7 +19,10 @@ class testApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-		
+        
+        void ourProcessImage(unsigned char ourImagePixels[],unsigned char ourResultPixels[], int width, int height);
+        void ourSetPixel(int horizontal,int vertical,unsigned char R,unsigned char G,unsigned char B,int w, unsigned char pixels[]);
+        void ourGetPixel(int horizontal,int vertical,unsigned char* R,unsigned char* G,unsigned char* B,int w, unsigned char pixels[]);
 		//ofTexture	tex;
 		//ofPixels	pixels;
 		ofImage		image;
